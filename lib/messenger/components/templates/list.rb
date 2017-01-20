@@ -7,7 +7,7 @@ module Messenger
 
       attr_accessor :template_type, :elements, :buttons
 
-      ATTRIBUTES = %w(template_type elements, buttons).freeze
+      ATTRIBUTES = %w(template_type elements buttons).freeze
 
       def initialize(elements:, buttons:)
         @type               = 'template'
