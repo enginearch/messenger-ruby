@@ -70,6 +70,11 @@ module Messenger
                                         ],
                                         postback: :payload,
                                         optin: :ref,
+                                        referral: [
+                                          :ref,
+                                          :source,
+                                          :type
+                                        ],
                                         delivery: [
                                           { mids: [] },
                                           :watermark,
