@@ -27,7 +27,10 @@ module Messenger
       end
 
       def assign_or_raise_exception params, keys
+        puts "params: #{params.inspect}"
+
         keys.each do |key|
+          puts "params[#{key}]: params[key].present?"
           if params[key].present?
             self["@#{key}"]  = params[key]
           else
