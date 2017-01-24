@@ -8,6 +8,7 @@ module Messenger
       def initialize title:, url:, webview_height_ratio:, fallback_url:
         @type                 = 'web_url'.freeze
         @title                = title
+        @url                  = url
         @messenger_extensions = true
         @webview_height_ratio = webview_height_ratio
         @fallback_url         = fallback_url
