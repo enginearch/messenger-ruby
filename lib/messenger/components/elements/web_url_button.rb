@@ -5,11 +5,11 @@ module Messenger
 
       REQUIRED_ATTRIBUTES = %w(title url).freeze
 
-      def initialize title:, url:, webview_height_ratio:, fallback_url:
+      def initialize title:, url:, webview_height_ratio:, fallback_url:, messenger_extensions:
         @type                 = 'web_url'.freeze
         @title                = title
         @url                  = url
-        @messenger_extensions = true
+        @messenger_extensions = messenger_extensions
         @webview_height_ratio = webview_height_ratio
         @fallback_url         = fallback_url
       end
