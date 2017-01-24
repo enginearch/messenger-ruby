@@ -38,6 +38,7 @@ require "messenger/parameters/entry"
 require "messenger/parameters/messaging"
 require "messenger/parameters/read"
 require "messenger/parameters/account_linking"
+require "messenger/parameters/referral"
 
 require "messenger/parameters/delivery"
 require "messenger/parameters/message"
