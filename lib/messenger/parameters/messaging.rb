@@ -3,7 +3,7 @@ module Messenger
     class Messaging
       attr_accessor :sender_id, :recipient_id, :callback
 
-      def initialize(sender:, recipient:, timestamp: nil, message: nil, delivery: nil, postback: nil, optin: nil, read: nil, account_linking: nil, referral:)
+      def initialize(sender:, recipient:, timestamp: nil, message: nil, delivery: nil, postback: nil, optin: nil, read: nil, account_linking: nil, referral: nil)
         @sender_id    = sender['id']
         @recipient_id = recipient['id']
         @callback     = set_callback(message: message, delivery: delivery, postback: postback, optin: optin, read: read, account_linking: account_linking, referral: referral)
