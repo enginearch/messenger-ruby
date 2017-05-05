@@ -21,7 +21,7 @@ module Messenger
     private
 
     def app_location
-      "https://graph.facebook.com/v2.6/me/subscribed_apps?access_token=#{Messenger.config.page_access_token}"
+      "https://graph.facebook.com/v2.9/me/subscribed_apps?access_token=#{Messenger.config.page_access_token}"
     end
 
     def activate_bot
